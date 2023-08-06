@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #b82020;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .social-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .social-buttons button {
+      width: 48%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 4px;
+    }
+    .google {
+      background-color: #DB4437;
+      color: #181717;
+    }
+    .facebook {
+      background-color: #3B5998;
+      color: #1e1d1d;
+    }
+    .twitter {
+      background-color: #00ACEE;
+      color: #0d0d0d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+    <div class="social-buttons">
+      <button class="google">Register with Google</button>
+      <button class="facebook">Register with Facebook</button>
+      <button class="twitter">Register with Twitter</button>
+    </div>
+  </div>
+</body>
+</html>
